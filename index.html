@@ -138,14 +138,17 @@
     <div class="container">
       <h2 class="section-title reveal"><span data-zh>项目</span><span data-en>Projects</span></h2>
       <div class="projects-list reveal-stagger">
-        <!-- Project 1 — placeholder, waiting for user to provide details -->
-        <article class="project-card" style="opacity:0.5; pointer-events:none;">
+        <!-- Project 1: Cloud Chat -->
+        <article class="project-card">
           <div class="project-head">
-            <h3 class="project-name"><span data-zh>项目一（待补充）</span><span data-en>Project 1 (TBD)</span></h3>
+            <h3 class="project-name">Cloud Chat</h3>
+            <a href="https://github.com/luckybillyz11-ops/cloud-chat" target="_blank" rel="noopener" class="project-link" title="源码">
+              <svg class="icon-github" viewBox="0 0 24 24" fill="currentColor"><use href="#icon-github-path"/></svg>
+            </a>
           </div>
-          <p class="project-desc"><span data-zh>项目描述待补充。请提供项目名称、描述、技术栈和链接。</span><span data-en>Project description coming soon. Please provide name, description, tech stack, and links.</span></p>
+          <p class="project-desc"><span data-zh>支持多模型切换、MCP 工具调用的 AI 实时聊天室。具备群聊/私聊功能，可配置任意 OpenAI 兼容接口（DeepSeek、Qwen、Claude 等），AI 回复流式实时显示，支持上下文记忆。后端 FastAPI + SQLAlchemy 异步架构，前端 Vue 3 + TypeScript，单一 WebSocket 承载聊天与 AI 流式输出。</span><span data-en>A real-time AI chatroom with multi-model switching and MCP tool calling. Features group/private chat, configurable OpenAI-compatible APIs (DeepSeek, Qwen, Claude, etc.), streaming AI responses, and conversation memory. Built with FastAPI + SQLAlchemy async backend, Vue 3 + TypeScript frontend, single WebSocket for both chat and AI streaming.</span></p>
           <div class="project-tech">
-            <span>---</span>
+            <span>FastAPI</span><span>Vue 3</span><span>WebSocket</span><span>pydantic-ai</span><span>MCP</span><span>SQLite</span>
           </div>
         </article>
 
