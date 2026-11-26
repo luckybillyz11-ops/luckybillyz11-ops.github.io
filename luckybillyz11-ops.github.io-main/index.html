@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="周子贺 — AI Agent 开发者">
+  <meta property="og:description" content="AI Agent 开发 · 全栈开发 | 个人简历与项目展示">
+  <meta property="og:image" content="https://github.com/luckybillyz11-ops.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <title>周子贺 — AI Agent 开发者</title>
+  <link rel="icon" href="https://github.githubassets.com/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- SVG Icon Definitions -->
+  <svg style="display:none" aria-hidden="true">
+    <defs>
+      <path id="icon-github-path" d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.605-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12 24 5.37 18.63 0 12 0z"/>
+      <path id="icon-mail-path" d="M1.75 3h20.5c.966 0 1.75.784 1.75 1.75v14.5A1.75 1.75 0 0 1 22.25 21H1.75A1.75 1.75 0 0 1 0 19.25V4.75C0 3.784.784 3 1.75 3ZM1.5 19.25c0 .138.112.25.25.25h20.5a.25.25 0 0 0 .25-.25V8.714l-9.62 4.878a1.25 1.25 0 0 1-1.26 0L1.5 8.714v10.536Zm21.5-13.068L12.4 11.95a.25.25 0 0 1-.2 0L1.5 6.182V4.75a.25.25 0 0 1 .25-.25h20.5a.25.25 0 0 1 .25.25v1.432Z"/>
+      <path id="icon-phone-path" d="M5.75 0A2.75 2.75 0 0 0 3 2.75v18.5A2.75 2.75 0 0 0 5.75 24h12.5A2.75 2.75 0 0 0 21 21.25V2.75A2.75 2.75 0 0 0 18.25 0H5.75ZM4.5 2.75c0-.69.56-1.25 1.25-1.25h12.5c.69 0 1.25.56 1.25 1.25v18.5c0 .69-.56 1.25-1.25 1.25H5.75c-.69 0-1.25-.56-1.25-1.25V2.75ZM11 19.75a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"/>
+      <g id="icon-external-link">
+        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+        <polyline points="15 3 21 3 21 9"/>
+        <line x1="10" y1="14" x2="21" y2="3"/>
+      </g>
+    </defs>
+  </svg>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <div class="nav-brand">
+        <a href="https://github.com/luckybillyz11-ops" target="_blank" rel="noopener" class="nav-github" aria-label="GitHub 主页">
+          <svg class="icon-github" viewBox="0 0 24 24" fill="currentColor"><use href="#icon-github-path"/></svg>
+        </a>
+        <a href="#hero" class="nav-logo">周子贺</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about"><span data-zh>关于</span><span data-en>About</span></a></li>
+        <li><a href="#skills"><span data-zh>技能</span><span data-en>Skills</span></a></li>
+        <li><a href="#projects"><span data-zh>项目</span><span data-en>Projects</span></a></li>
+        <li><a href="#education"><span data-zh>学历</span><span data-en>Education</span></a></li>
+        <li><a href="#contact"><span data-zh>联系</span><span data-en>Contact</span></a></li>
+      </ul>
+      <div class="nav-toggles">
+        <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">EN</button>
+        <button class="theme-toggle" id="theme-toggle" aria-label="切换主题">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero" class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-avatar">
+          <img src="https://github.com/luckybillyz11-ops.png" alt="周子贺" width="140" height="140">
+        </div>
+        <div class="hero-text">
+          <h1 class="hero-name">周子贺</h1>
+          <p class="hero-title"><span data-zh>AI Agent 开发 · 全栈开发</span><span data-en>AI Agent Dev · Full-Stack Dev</span></p>
+          <p class="hero-tagline"><span data-zh>好学、自驱，专注于用 AI 技术构建实用工具</span><span data-en>Self-driven, focused on building practical tools with AI</span></p>
+          <div class="hero-links">
+            <a href="https://github.com/luckybillyz11-ops" target="_blank" rel="noopener" class="btn btn-outline">
+              <svg class="icon-github" viewBox="0 0 24 24" fill="currentColor"><use href="#icon-github-path"/></svg>
+              GitHub
+            </a>
+            <a href="mailto:3560782494@qq.com" class="btn btn-primary">
+              <svg class="icon-mail" viewBox="0 0 24 24" fill="currentColor"><use href="#icon-mail-path"/></svg>
+              <span data-zh>联系我</span><span data-en>Contact Me</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title reveal"><span data-zh>关于我</span><span data-en>About Me</span></h2>
+      <div class="about-text reveal">
+        <p data-zh>我是2027届移动应用开发专业的学生。从大一开始接触 Linux 和 C 语言起，我就迷上了把想法变成能跑的代码的感觉，也享受 debug 到凌晨终于跑通那一刻的成就感。</p>
+        <p data-en>I'm a 2027 mobile app development student. Since freshman year, diving into Linux and C, I've been hooked on turning ideas into working code - and the thrill of finally fixing a bug at 2 AM.</p>
+        <p data-zh>我的技术路线沿着"后端+微服务+AI"三个方向不断拓展：在企业项目中用 Spring Cloud Alibaba 全家桶（Nacos、Gateway、OpenFeign、Sentinel）配合 Redis、MySQL、Elasticsearch 落地过真实业务，也基于 Activiti 7 编排过质检审批流程；课余时间折腾过 Docker/K8s，用 Flutter 写过 App，并用 LangChain、pydantic_ai 搭过几个 Agent 原型。目前我在 Java 后端开发的基础上专注 AI Agent 方向，能够独立完成前后端全栈项目，并正在深入学习分布式系统设计与大模型应用开发。</p>
+        <p data-en>My tech path spans backend, microservices, and AI: in production projects I have used the Spring Cloud Alibaba stack (Nacos, Gateway, OpenFeign, Sentinel) together with Redis, MySQL and Elasticsearch, and orchestrated quality-inspection approval flows on Activiti 7; in my spare time I have played with Docker/K8s, built mobile apps with Flutter, and prototyped AI agents using LangChain and pydantic_ai. Currently I focus on AI agent development on top of my Java backend foundation, can deliver full-stack projects end to end, and am deepening my knowledge of distributed systems and LLM application development.</p>
+        <p data-zh>我对新技术始终保持好奇，习惯先自己钻研再寻求帮助。大学期间在实验室跟随老师学习并担任助教，曾获一带一路暨金砖国家技能大赛三等奖及低代码比赛二等奖。相信持续学习是开发者最重要的能力，期待能在实际业务中创造价值。</p>
+        <p data-en>I stay curious about new tech, preferring to dig in myself before asking for help. During university, I worked in labs as a teaching assistant and won third place in both the Belt and Road BRICS Skills Competition and a low-code development contest. I believe continuous learning is a developer's core competency and look forward to creating real business value.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title reveal"><span data-zh>技能</span><span data-en>Skills</span></h2>
+      <div class="skills-grid reveal-stagger">
+        <div class="skill-group">
+          <h3 class="skill-group-title"><span data-zh>Java 后端框架</span><span data-en>Java Backend Frameworks</span></h3>
+          <p class="skill-desc"><span data-zh>熟练使用 Spring Boot、Spring MVC 构建 RESTful 服务，掌握 MyBatis / MyBatis-Plus 持久层开发、统一异常处理与前后端接口联调。</span><span data-en>Building RESTful services with Spring Boot and Spring MVC; solid on MyBatis / MyBatis-Plus persistence, unified exception handling and front-end/back-end API integration.</span></p>
+          <ul class="skill-tags"><li>Spring Boot</li><li>Spring MVC</li><li>MyBatis-Plus</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title"><span data-zh>微服务架构</span><span data-en>Microservices</span></h3>
+          <p class="skill-desc"><span data-zh>掌握 Spring Cloud Alibaba 全家桶：Nacos 注册与配置中心、OpenFeign 服务调用、Gateway 统一网关、Sentinel 限流熔断。</span><span data-en>The Spring Cloud Alibaba stack: Nacos registry & config center, OpenFeign RPC, Gateway edge service, Sentinel rate limiting and circuit breaking.</span></p>
+          <ul class="skill-tags"><li>Spring Cloud Alibaba</li><li>Nacos</li><li>Gateway</li><li>Sentinel</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title"><span data-zh>AI 智能体开发</span><span data-en>AI Agent Development</span></h3>
+          <p class="skill-desc"><span data-zh>具备 Agent 开发实践：接入私有知识库、Tool Calling 工具调用与多轮会话的长期记忆，并基于 FastAPI + Vue 3 自研 AI 实时聊天室 Cloud Chat；熟练使用 Claude、Codex 等 AI 工具辅助编程。</span><span data-en>Hands-on agent work: private knowledge-base retrieval, tool calling and long-term memory across multi-turn sessions; built the Cloud Chat AI chatroom on FastAPI + Vue 3. Daily user of AI coding assistants such as Claude and Codex.</span></p>
+          <ul class="skill-tags"><li>LLM</li><li>Agent</li><li>Tool Calling</li><li>RAG</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title"><span data-zh>安全认证与工作流</span><span data-en>Security & Workflow</span></h3>
+          <p class="skill-desc"><span data-zh>基于 Spring Security + JWT 搭建无状态鉴权，理解 RBAC 权限模型与过滤器链；掌握 Activiti 7 / BPMN 2.0 的流程部署、排他网关分支与流程监听器。</span><span data-en>Stateless auth with Spring Security + JWT, familiar with the RBAC model and filter chain; workflow orchestration on Activiti 7 / BPMN 2.0 - deployment, exclusive gateways and process listeners.</span></p>
+          <ul class="skill-tags"><li>Spring Security</li><li>JWT</li><li>RBAC</li><li>Activiti 7</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title"><span data-zh>中间件与数据库</span><span data-en>Middleware & Database</span></h3>
+          <p class="skill-desc"><span data-zh>使用 Redis 做缓存与热点数据加速，掌握 MySQL 表结构设计与查询优化、Elasticsearch 8 全文检索，并借助若依定时任务完成榜单刷新等异步作业。</span><span data-en>Redis caching for hot data, MySQL schema design and query optimization, Elasticsearch 8 full-text search, plus scheduled jobs (RuoYi tasks) for leaderboard refreshes.</span></p>
+          <ul class="skill-tags"><li>Redis</li><li>MySQL</li><li>Elasticsearch</li><li>定时任务</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title"><span data-zh>前端与工程化</span><span data-en>Frontend & Engineering</span></h3>
+          <p class="skill-desc"><span data-zh>使用 Vue 3 + Element Plus 独立完成后台管理页面开发与接口联调；熟悉 Maven、Git、Linux 与若依 RuoYi 快速开发框架。</span><span data-en>Independent frontend delivery with Vue 3 + Element Plus for admin consoles; at home with Maven, Git, Linux and the RuoYi rapid-development framework.</span></p>
+          <ul class="skill-tags"><li>Vue 3</li><li>Element Plus</li><li>Maven</li><li>Git</li><li>Linux</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title reveal"><span data-zh>项目</span><span data-en>Projects</span></h2>
+      <div class="projects-list reveal-stagger">
+        <!-- Project 1: 车知道 · 车谈子系统 -->
+        <article class="project-card">
+          <div class="project-head">
+            <h3 class="project-name">车知道 · 车谈子系统</h3>
+          </div>
+          <p class="project-desc"><span data-zh>一站式汽车信息与交易服务平台（2026.08 - 2026.10 · 车谈子系统核心开发者）。核心交易链路已由前期团队交付，我所在小组追加建设垂直内容社区板块「车谈」，面向车主提供测评文章、车主分享与广告运营，内容流量最终导流留资至主站交易链路。个人负责车型库模块（单表自关联构建「品牌 → 车系 → 车型」三级车型树与面包屑导航，支持按品牌、能源类型、国产/进口检索）、测评文章模块（栏目分类、用户评论、热门文章 Top3 推荐）、车主分享 UGC 模块（枚举类集中管理分享状态、正文分离存储、浏览/点赞/收藏/分享计数）、榜单模块（定时任务刷新销量榜、口碑榜、热度榜）以及运营位的配置化管理。</span><span data-en>A one-stop automotive information and trading platform (Aug 2026 - Oct 2026, core developer of the "CheTan" subsystem). The trading flow was already delivered; our team added a vertical content community - "CheTan" - with review articles, owner sharing and ad operations, funneling content traffic into leads for the main site. I owned the vehicle-catalog module (a three-level brand / series / model tree on a self-referencing table with breadcrumb navigation, filterable by brand, energy type and domestic vs. imported), the review-article module (categories, comments, top-3 trending picks), the owner-generated content module (share status centralized in enums, body text stored separately, view / like / favorite / share counters), the leaderboard module (scheduled jobs refreshing sales, reputation and popularity rankings) and configurable operation slots.</span></p>
+          <div class="project-tech">
+            <span>Spring Cloud Alibaba</span><span>Spring Boot</span><span>MyBatis-Plus</span><span>Redis</span><span>MySQL</span><span>Vue 3</span><span>Element Plus</span>
+          </div>
+        </article>
+
+        <!-- Project 2: 质量检验智能闭环管理系统 -->
+        <article class="project-card">
+          <div class="project-head">
+            <h3 class="project-name">质量检验智能闭环管理系统</h3>
+          </div>
+          <p class="project-desc"><span data-zh>一体化质量检验与审批管理平台（2026.05 - 2026.07 · 后端开发），解决传统质检线下签字繁琐、Excel 数据流转易丢失、异常品追踪困难等痛点，覆盖制造业商品上架、下架与服务项配置的全生命周期。以 Activiti 7 流程引擎为编排核心，实现「合格直通归档」与「不合格自动进入闭环处置」的分支逻辑，支持 .bpmn 文件上传热部署、流程实例管理、流程 XML 在线查看与 BPMN 流程图 PNG 渲染，业务侧调整流程无需重新发版；采用 Spring Security + JWT 无状态鉴权，结合 RBAC 精细化配置检验员、审核人、质量主管等角色的功能与数据权限；设计并落地「人工记录 + 自动闭环」机制，通过流程监听器在审核判定不合格时自动触发闭环处置，保障异常处理全程可追溯。</span><span data-en>An integrated quality-inspection and approval platform (May 2026 - Jul 2026, backend developer) that replaces paper sign-offs, error-prone Excel hand-offs and lost defect tracking, covering the full lifecycle of manufactured goods - listing, delisting and service-item configuration. Activiti 7 orchestrates the approval flow with "pass - archive" and "fail - automatic closed-loop disposal" branches, supporting .bpmn upload and hot deployment, process-instance management, online XML viewing and PNG rendering of BPMN diagrams, so process changes need no new release. Spring Security + JWT provide stateless auth with RBAC-scoped functional and data permissions for inspectors, reviewers and quality managers, while a "manual record + automatic closed loop" mechanism triggered by process listeners keeps every exception traceable end to end.</span></p>
+          <div class="project-tech">
+            <span>Spring Boot</span><span>MyBatis</span><span>Activiti 7</span><span>Spring Security</span><span>JWT</span><span>MySQL</span><span>Vue 2</span><span>Element UI</span>
+          </div>
+        </article>
+
+        <!-- Project 3: Cloud Chat -->
+        <article class="project-card">
+          <div class="project-head">
+            <h3 class="project-name">Cloud Chat</h3>
+            <a href="https://github.com/luckybillyz11-ops/cloud-chat" target="_blank" rel="noopener" class="project-link" title="源码">
+              <svg class="icon-github" viewBox="0 0 24 24" fill="currentColor"><use href="#icon-github-path"/></svg>
+            </a>
+          </div>
+          <p class="project-desc"><span data-zh>支持多模型切换、MCP 工具调用的 AI 实时聊天室。具备群聊/私聊功能，可配置任意 OpenAI 兼容接口（DeepSeek、Qwen、Claude 等），AI 回复流式实时显示，支持上下文记忆。后端 FastAPI + SQLAlchemy 异步架构，前端 Vue 3 + TypeScript，单一 WebSocket 承载聊天与 AI 流式输出。</span><span data-en>A real-time AI chatroom with multi-model switching and MCP tool calling. Features group/private chat, configurable OpenAI-compatible APIs (DeepSeek, Qwen, Claude, etc.), streaming AI responses, and conversation memory. Built with FastAPI + SQLAlchemy async backend, Vue 3 + TypeScript frontend, single WebSocket for both chat and AI streaming.</span></p>
+          <div class="project-tech">
+            <span>FastAPI</span><span>Vue 3</span><span>WebSocket</span><span>pydantic-ai</span><span>MCP</span><span>SQLite</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title reveal"><span data-zh>教育</span><span data-en>Education</span></h2>
+      <div class="edu-card reveal">
+        <div class="edu-badge"><span data-zh>2027 届</span><span data-en>Class of 2027</span></div>
+        <h3 class="edu-school"><span data-zh>辽宁金融职业学院</span><span data-en>Liaoning Finance Vocational College</span></h3>
+        <p class="edu-major"><span data-zh>移动应用开发专业，大专</span><span data-en>Mobile App Development, Associate Degree</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title reveal"><span data-zh>联系方式</span><span data-en>Contact</span></h2>
+      <div class="contact-links reveal-stagger">
+        <a href="tel:+8615902403994" class="contact-item">
+          <svg class="icon-phone" viewBox="0 0 24 24" fill="currentColor"><use href="#icon-phone-path"/></svg>
+          <span>159 0240 3994</span>
+        </a>
+        <a href="mailto:3560782494@qq.com" class="contact-item">
+          <svg class="icon-mail" viewBox="0 0 24 24" fill="currentColor"><use href="#icon-mail-path"/></svg>
+          <span>3560782494@qq.com</span>
+        </a>
+        <a href="https://github.com/luckybillyz11-ops" target="_blank" rel="noopener" class="contact-item">
+          <svg class="icon-github" viewBox="0 0 24 24" fill="currentColor"><use href="#icon-github-path"/></svg>
+          <span>github.com/luckybillyz11-ops</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-copy">© 2026 周子贺</p>
+        <nav class="footer-links">
+          <a href="https://github.com/luckybillyz11-ops" target="_blank" rel="noopener">
+            <svg class="icon-github" viewBox="0 0 24 24" fill="currentColor"><use href="#icon-github-path"/></svg> GitHub
+          </a>
+          <a href="mailto:3560782494@qq.com">
+            <svg class="icon-mail" viewBox="0 0 24 24" fill="currentColor"><use href="#icon-mail-path"/></svg>
+            <span data-zh>邮箱</span><span data-en>Email</span>
+          </a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
